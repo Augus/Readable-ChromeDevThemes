@@ -8,17 +8,15 @@ Develop more pleasure！
 How to Install 
 ========================
   
-  1. Download Custom.css
+  1. Download <a href="https://raw.github.com/Augus/Readable-ChromeDevThemes/master/Custom.css" target="_black">Custom.css</a>
   2. Go Chrome /User StyleSheets/ location replace Custom.css file
 
-  Windows:
-	%LOCALAPPDATA%\Google\Chrome\User Data\Default\User StyleSheets\Custom.css
-
-	Linux: -- this may be specific to your distro?
-	~/.config/chromium/Default/User StyleSheets/Custom.css
-
-	Mac:
-	~/Library/Application Support/Google/Chrome/Default/User StyleSheets/Custom.css
+  <h3>Windows:</h3>
+	<p>%LOCALAPPDATA%\Google\Chrome\User Data\Default\User StyleSheets\Custom.css</p>
+  <h3>Linux:</h3> 
+  	<p>~/.config/chromium/Default/User StyleSheets/Custom.css</p>
+  <h3>Mac:</h3>
+	<p>~/Library/Application Support/Google/Chrome/Default/User StyleSheets/Custom.css</p>
 
 
 Theme Features
