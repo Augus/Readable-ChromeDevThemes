@@ -54,9 +54,9 @@ leave them as the defaults.
 #-webkit-web-inspector #console-message,
 #-webkit-web-inspector .text-editor-contents,
 #-webkit-web-inspector #console-view * {
-	font-size: 13px !important;
+	/*font-size: 13px !important;*/
 	/*font-family: Monaco, Consolas, "Lucida Console", monospace !important;*/
-	line-height: 1.6 !important;
+	line-height: 1.6em !important;
 	font-family: Menlo, "Consolas", monospace !important;
 }
 
@@ -206,6 +206,69 @@ body .source-code {
 .webkit-javascript-keyword {
 	color: #C84252 !important;
 }
+
+
+
+/*	Console
+------------------------------------------------*/
+#-webkit-web-inspector .console-user-command > .console-message-text {
+	color: #333 !important;
+}
+
+#-webkit-web-inspector #console-messages a {
+	color: #389 !important;
+}
+
+#-webkit-web-inspector #console-messages a:hover {
+	color: blue !important;
+}
+
+#-webkit-web-inspector .console-formatted-boolean {
+	color: #CC6600 !important;
+}
+
+#-webkit-web-inspector .console-error-level .console-message-text,
+#-webkit-web-inspector .console-error-level .section .header .title {
+
+}
+
+#-webkit-web-inspector .console-error-level .children .source-code {
+
+}
+
+#-webkit-web-inspector .console-error-level .properties-tree {
+	font-weight: normal !important;
+}
+
+#-webkit-web-inspector .console-message,
+#-webkit-web-inspector .console-user-command {
+	/*border-color: #333 !important;*/
+	/*border-style: dashed !important;*/
+	border: 0px !important;
+	border-bottom:1px dashed #ddd !important;
+	padding: 5px 0 !important;
+	line-height: 1.4em !important;
+}
+
+#-webkit-web-inspector .console-message {
+	/*padding-bottom: 5px !important;*/
+	/*margin-bottom: 3px;*/
+}
+
+#-webkit-web-inspector .console .console-formatted-object {
+
+}
+
+#-webkit-web-inspector .console .console-formatted-string {
+	color: #007cbb !important;
+}
+
+#-webkit-web-inspector .console .name {
+	color: #BD3E4D !important;
+}
+
+
+
 
 /*  Source Code - Pane
 ------------------------------------------------*/
