@@ -39,7 +39,8 @@ Theme Features 有哪些好處
 3. 留白及背景顏色讓選擇區塊更明確了
 4. 註解更清楚更好看了
 5. HTML標籤展開有尺規輔助了
-
+6. 自動高亮選中tag對應的style
+7. 更清楚的Console
 
 
 Light version theme Preview : 
@@ -50,3 +51,5 @@ Light version theme Preview :
 <img src="https://dl.dropboxusercontent.com/u/24421764/ChromeDevThemes/light-theme2.png">
 
 <img src="https://dl.dropboxusercontent.com/u/24421764/ChromeDevThemes/light-theme3.png">
+
+<img src="https://dl.dropboxusercontent.com/u/24421764/ChromeDevThemes/light-theme4.png">
