@@ -89,6 +89,10 @@ body .source-code {
 	        transition-timing-function: cubic-bezier(0.470, 0.000, 0.745, 0.715); /* easeInSine */
 }
 
+#elements-content .parent {
+	border: 1px solid transparent;
+}
+
 #elements-content .parent::before
 {
 	content: url(chrome-devtools://devtools/Images/treeRightTriangleBlack.png) !important;
