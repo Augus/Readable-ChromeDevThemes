@@ -1,6 +1,6 @@
 /************************************************************
 
-  Install locations --
+	Install locations --
 
 	Windows:
 	%LOCALAPPDATA%\Google\Chrome\User Data\Default\User StyleSheets\Custom.css
@@ -16,6 +16,8 @@
 
 	all styles you can change
 	chrome-devtools://devtools/devTools.css
+
+	https://github.com/simonsmith/DarkDev/blob/master/Custom.css
 
 ************************************************************/
 
@@ -45,10 +47,23 @@ leave them as the defaults.
 	content: url(chrome-devtools://devtools/Images/treeDownTriangleBlack.png) !important;
 }
 
+
+/* Common typography */
+#-webkit-web-inspector .source-code,
+#-webkit-web-inspector #main-panels .split-view-sidebar-right *,
+#-webkit-web-inspector #console-message,
+#-webkit-web-inspector .text-editor-contents,
+#-webkit-web-inspector #console-view * {
+	font-size: 13px !important;
+	/*font-family: Monaco, Consolas, "Lucida Console", monospace !important;*/
+	line-height: 1.6 !important;
+	font-family: Menlo, "Consolas", monospace !important;
+}
+
 /* Sublime text 2 default font */
 body .monospace,
 body .source-code {
-	font-family: Menlo, "Consolas", monospace !important;
+
 }
 
 /* html inspect area */
@@ -75,16 +90,17 @@ body .source-code {
 	margin : 0.875em 0 0 !important;
 }
 
+#elements-content .parent.selected + *
+{
+	background: #f1f1f1 !important;
+	border-left: 1px dotted #aaa;
+}
+
 #elements-content .parent.selected
 {
 	background: #D0F3F3;
 	border-left: 1px solid #000;
-}
-
-#elements-content .parent.selected + *
-{
-	background: #fafafa;
-	border-left: 1px dotted #aaa;
+	border-radius: 3px;
 }
 
 #elements-content.source-code
@@ -95,6 +111,13 @@ body .source-code {
 #elements-content .highlight {
   color: #d4d4d4;
 }
+
+
+#-webkit-web-inspector .elements .selected {
+	background: #D0F3F3 !important;
+	border-left: 1px dotted #aaa;
+}
+
 /* end html inspect area */
 
 
@@ -182,4 +205,24 @@ body .source-code {
 
 .webkit-javascript-keyword {
 	color: #C84252 !important;
+}
+
+/*  Source Code - Pane
+------------------------------------------------*/
+
+/* Generic */
+
+#-webkit-web-inspector #main-panels .pane > .title,
+#-webkit-web-inspector #main-panels .sidebar-separator,
+#-webkit-web-inspector #main-panels .sidebar-pane-subtitle {
+    font-family: sans-serif !important;
+}
+
+#-webkit-web-inspector .split-view-sidebar-right .webkit-css-property {
+}
+
+#-webkit-web-inspector .selector-matches {
+	color: #333 !important;
+	font-weight: bold;
+	background: #D0F3F3 !important;
 }
