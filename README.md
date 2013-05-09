@@ -32,7 +32,7 @@ Theme Features 有哪些好處
 3. Select area has some background color, and margin-top
 4. Guide lines before selected tag.
 
-<p>它能夠減少你眼睛的疲勞，讓開發可以是一件更快樂的事情</p>
+<p>它能夠減少你眼睛的疲勞，更愉悅的開發環境</p>
 
 1. 顏色對比降低了也更好看了
 2. 行高增加更適合閱讀了
