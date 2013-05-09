@@ -68,6 +68,7 @@ body .source-code {
 
 /* html inspect area */
 /* set readable lineheight to console */
+
 #elements-content * {
 	line-height: 1.4em;
 }
@@ -107,17 +108,11 @@ body .source-code {
 
 #elements-content .parent.expanded
 {
-	background: #eee;
+	background: #f1f1f1;
 	margin-top : 0.875em !important;
 }
 
-#elements-content .parent.selected + *.expanded
-{
-	background: #f1f1f1 !important;
-	border-left: 1px dashed #aaa;
-	border-bottom: 1px dashed #aaa;
-	border-right: 1px dashed #aaa;
-}
+
 
 #elements-content .parent.selected
 {
@@ -140,6 +135,17 @@ body .source-code {
 	background: #D0F3F3 !important;
 	border: 1px solid #aaa;
 	/*border-bottom: 1px dotted #aaa;*/
+}
+
+#elements-content .parent.selected + *.expanded
+{
+	background: #f1f1f1 !important;
+	border-left: 1px dashed #aaa;
+	border-bottom: 1px dashed #aaa;
+	border-right: 1px dashed #aaa;
+	border-radius: 0 0 3px 3px;
+	padding-top: 5px;
+	padding-bottom: 10px;
 }
 
 /* end html inspect area */
