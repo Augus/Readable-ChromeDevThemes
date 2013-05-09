@@ -1,0 +1,185 @@
+/************************************************************
+
+  Install locations --
+
+	Windows:
+	%LOCALAPPDATA%\Google\Chrome\User Data\Default\User StyleSheets\Custom.css
+
+	Linux: -- this may be specific to your distro?
+	~/.config/chromium/Default/User StyleSheets/Custom.css
+
+	Mac:
+	~/Library/Application Support/Google/Chrome/Default/User StyleSheets/Custom.css
+
+	Based on Coding Horror 2010 theme
+	Using Sublime text 2 default font, and more readable color and lineheight
+
+	all styles you can change
+	chrome-devtools://devtools/devTools.css
+
+************************************************************/
+
+body.platform-windows .monospace,
+body.platform-windows .source-code
+{
+	/* Source code Pro is what I'm currently using in VS2012 so why not here
+	   too -- this will fallback to consolas in case you don't jump on trends :)
+    */
+	font-family: "Source Code Pro", "Consolas", monospace !important;
+}
+
+/*
+Linux/Mac may want to add thier own fonts, i'm not familiar with them so we'll
+leave them as the defaults.
+*/
+
+#console-messages .console-group-messages .section .header::before,
+#console-messages .properties-tree li.parent::before
+{
+	content: url(chrome-devtools://devtools/Images/treeRightTriangleBlack.png) !important;
+}
+
+#console-messages .console-group-messages .section.expanded .header::before,
+#console-messages .properties-tree li.parent.expanded::before
+{
+	content: url(chrome-devtools://devtools/Images/treeDownTriangleBlack.png) !important;
+}
+
+/* Sublime text 2 default font */
+body .monospace,
+body .source-code {
+	font-family: Menlo, "Consolas", monospace !important;
+}
+
+/* html inspect area */
+/* set readable lineheight to console */
+#elements-content * {
+	line-height: 1.4em;
+}
+
+#elements-content .parent::before
+{
+	content: url(chrome-devtools://devtools/Images/treeRightTriangleBlack.png) !important;
+	position: relative;
+	z-index: 999;
+}
+
+#elements-content .parent.expanded::before
+{
+	content: url(chrome-devtools://devtools/Images/treeDownTriangleBlack.png) !important;
+}
+
+#elements-content .parent.expanded
+{
+	background: #eee;
+	margin : 0.875em 0 0 !important;
+}
+
+#elements-content .parent.selected
+{
+	background: #D0F3F3;
+	border-left: 1px solid #000;
+}
+
+#elements-content .parent.selected + *
+{
+	background: #fafafa;
+	border-left: 1px dotted #aaa;
+}
+
+#elements-content.source-code
+{
+	background: #fcfcfc !important;
+}
+
+#elements-content .highlight {
+  color: #d4d4d4;
+}
+/* end html inspect area */
+
+
+/* CSS Inspect */
+/* all css style has readable lineheight */
+[class^="webkit-css"] {
+	line-height: 1.4em !important;
+}
+
+.webkit-css-selector {
+	color: #BD3E4D !important;
+}
+
+.webkit-css-comment {
+	color: #4DA95F !important;
+	font-style: italic !important;
+	line-height: 1.6em !important;
+}
+
+.webkit-css-url, .webkit-css-color, .webkit-css-string, .webkit-css-keyword,
+.webkit-css-selector {
+    color: #389 !important;
+}
+
+.webkit-css-number {
+    color: #3F8EBB !important;
+}
+
+.webkit-css-important {
+	color: #0000FF !important;
+}
+
+.webkit-css-property,
+.webkit-css-at-rule {
+	color: #C84252 !important;
+}
+
+
+/* HTML */
+.webkit-html-comment {
+	color: #4DA95F !important;
+	font-style: italic !important;
+	line-height: 1.6em !important;
+}
+
+.webkit-html-tag,
+.webkit-html-doctype {
+	color: #6B4E32 !important;
+}
+
+.webkit-html-text-node,
+.webkit-html-css-node,
+.webkit-html-js-node {
+	color: #333 !important;
+}
+.webkit-html-attribute-name {
+	color: #BD3E4D !important;
+}
+
+.webkit-html-attribute-value {
+	color: #007CBB !important;
+}
+
+/* Javascript */
+[class^="webkit-javascript"] {
+	line-height: 1.4em !important;
+}
+.webkit-javascript-string {
+	color: #3F8EBB !important;
+}
+
+.webkit-javascript-comment {
+	color: #4DA95F !important;
+	font-style: italic !important;
+	line-height: 1.6em !important;
+}
+
+.webkit-javascript-number {
+    color: #429694 !important;
+}
+
+.webkit-javascript-ident {
+	color: #333 !important;
+}
+
+.webkit-javascript-keyword {
+	color: #C84252 !important;
+}
