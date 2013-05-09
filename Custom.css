@@ -56,7 +56,7 @@ leave them as the defaults.
 #-webkit-web-inspector #console-view * {
 	/*font-size: 13px !important;*/
 	/*font-family: Monaco, Consolas, "Lucida Console", monospace !important;*/
-	line-height: 1.6em !important;
+	line-height: 1.4em !important;
 	font-family: Menlo, "Consolas", monospace !important;
 }
 
