@@ -13,14 +13,14 @@ How to Install 怎麼安裝
 ========================
   
   1. Download <a href="https://raw.github.com/Augus/Readable-ChromeDevThemes/master/Custom.css" target="_black">Custom.css</a>
-  2. Go Your Chrome /User StyleSheets/ location replace Custom.css file
+  2. Replace the `Custom.css` file in your `"User Stylesheets"` folder. Here is how to find `Custom.css`:
 
-  <h3>Windows:</h3>
-	<p>%LOCALAPPDATA%\Google\Chrome\User Data\Default\User StyleSheets\Custom.css</p>
-  <h3>Linux:</h3> 
-  	<p>~/.config/chromium/Default/User StyleSheets/Custom.css</p>
-  <h3>Mac:</h3>
-	<p>~/Library/Application Support/Google/Chrome/Default/User StyleSheets/Custom.css</p>
+  <h4>Windows:</h4>
+	`%LOCALAPPDATA%\Google\Chrome\User Data\Default\User StyleSheets\Custom.css`
+  <h4>Linux:</h4> 
+  	`~/.config/chromium/Default/User StyleSheets/Custom.css`
+  <h4>Mac:</h4>
+	`~/Library/Application Support/Google/Chrome/Default/User StyleSheets/Custom.css`
 
 
 Theme Features 有哪些好處
@@ -43,7 +43,7 @@ Theme Features 有哪些好處
 7. 更清楚的Console
 
 
-Light version theme Preview : 
+Screenshots : 
 ========================
 
 <img src="https://dl.dropboxusercontent.com/u/24421764/ChromeDevThemes/light-theme1.png">
