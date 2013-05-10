@@ -1,7 +1,7 @@
 Readable-ChromeDevThemes
 ========================
 
-Readable-ChromeDevThemes可以把Chrome Dev Tool 主題變得更清楚、更漂亮的，使用了 Sublime text2 預設字體、以及更高的行高、更舒服的顏色。
+開發工具變得更清楚、更漂亮，使用SB2預設字體、以及更高的行高、更舒服的顏色。
 
 More readable color and lineheight on Chrome developer tools, 
 Sublime text 2 default font
