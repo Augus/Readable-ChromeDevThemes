@@ -1,0 +1,25 @@
+.webkit-css-comment {
+    color: $css-comment-color !important;
+    font-style: italic !important;
+    line-height: $line-height !important;
+}
+
+.webkit-css-url {
+    color: $css-link-color;
+}
+
+.webkit-css-color, .webkit-css-string, .webkit-css-keyword, .webkit-css-selector {
+    color: $css-selector-color !important;
+}
+
+.webkit-css-number {
+    color: $css-number-color !important;
+}
+
+.webkit-css-important {
+    color: $css-important-color !important;
+}
+
+.webkit-css-property, .webkit-css-at-rule {
+    color: $css-property-color !important;
+}

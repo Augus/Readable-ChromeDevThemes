@@ -1,0 +1,88 @@
+#-webkit-web-inspector {
+    .source-code, #main-panels .split-view-sidebar-right *, #console-message, .text-editor-contents, #console-view * {
+        font-size: $font-size !important;
+        font-family: $font-family !important;
+        line-height: $line-height !important;
+    }
+}
+
+#console-messages {
+  .console-group-messages .section .header::before, .properties-tree li.parent::before {
+    content: url(chrome-devtools://devtools/Images/treeRightTriangleBlack.png) !important;
+    }
+  .console-group-messages .section.expanded .header::before, .properties-tree li.parent.expanded::before {
+    content: url(chrome-devtools://devtools/Images/treeDownTriangleBlack.png) !important; } }
+
+#elements-content {
+  * { }
+  .parent, .parent * {
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    -webkit-transition: background 150ms cubic-bezier(0.47, 0, 0.745, 0.715);
+    -moz-transition: background 150ms cubic-bezier(0.47, 0, 0.745, 0.715);
+    -ms-transition: background 150ms cubic-bezier(0.47, 0, 0.745, 0.715);
+    -o-transition: background 150ms cubic-bezier(0.47, 0, 0.745, 0.715);
+    transition: background 150ms cubic-bezier(0.47, 0, 0.745, 0.715);
+
+    -webkit-transition-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+    -moz-transition-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+    -ms-transition-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+    -o-transition-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+    transition-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+  }
+
+  &.source-code {
+    background: $background-color !important;
+  }
+  .parent {
+    border: 1px solid transparent;
+    &::before {
+      position: relative;
+      z-index: 999;
+      content: url(chrome-devtools://devtools/Images/treeRightTriangleBlack.png) !important;
+    }
+    &.expande {
+      background: #f1f1f1;
+    }
+    &.expanded::before {
+      content: url(chrome-devtools://devtools/Images/treeDownTriangleBlack.png) !important;
+    }
+    &.selected {
+      border-left: 1px solid #000;
+      border-radius: 3px;
+      background: #D0F3F3;
+    }
+  }
+
+  .highlight {
+    color: #d4d4d4;
+  }
+}
+
+#-webkit-web-inspector .elements .selected {
+  border: 1px solid $inspect-html-expand-border-color;
+  background: $inspect-html-selected-background !important;
+}
+
+/* wrap expanded style */
+#elements-content .parent.selected + *.expanded {
+  margin-bottom: 10px !important;
+  border-right: 1px dashed $inspect-html-expand-border-color;
+  border-bottom: 1px dashed $inspect-html-expand-border-color;
+  border-left: 1px dashed $inspect-html-expand-border-color;
+  border-radius: 0 0 3px 3px;
+  background: $inspect-html-expand-background !important;
+}
+
+.webkit-css-selector {
+    color: $inspect-css-property-color !important;
+}
+
+#-webkit-web-inspector .selector-matches {
+    background: $inspect-css-match-background !important;
+    color: $inspect-css-match-foreground !important;
+    font-weight: bold;
+}

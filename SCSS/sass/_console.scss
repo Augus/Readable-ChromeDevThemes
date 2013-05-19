@@ -1,0 +1,40 @@
+#-webkit-web-inspector {
+    .console-user-command > .console-message-text {
+        color: $console-foreground !important;
+    }
+    #console-messages a {
+        &:hover {
+            color: $console-link-hover-color !important;
+        }
+        color: $console-link-color !important;
+    }
+    .console-formatted-boolean {
+        color: $console-bool-color !important;
+    }
+    .console-error-level {
+        .console-message-text, .section .header .title, .children .source-code {}
+        .properties-tree {
+            font-weight: normal !important;
+        }
+    }
+    .console-message, .console-user-command {
+        padding: $console-line-padding !important;
+        border: 0px !important;
+        border-bottom: $console-line-border !important;
+        line-height: $line-height !important;
+    }
+    .console-message { }
+    .console {
+        .console-formatted-object { }
+        .console-formatted-string {
+            color: $console-key-color !important;
+        }
+        .name {
+            color: $console-value-color !important;
+        }
+    }
+    #main-panels {
+        .pane > .title, .sidebar-separator, .sidebar-pane-subtitle { }
+    }
+    .split-view-sidebar-right .webkit-css-property { }
+}
