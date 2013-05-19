@@ -116,8 +116,6 @@ Mac:
 	border-bottom: 1px dashed #aaa;
 	border-right: 1px dashed #aaa;
 	border-radius: 0 0 3px 3px;
-	/*padding-top: 5px;*/
-	/*padding-bottom: 10px;*/
 	margin-bottom: 10px !important;
 }
 
@@ -125,12 +123,8 @@ Mac:
  *	End of Html inspect area /
 
 
-/* CSS Inspect */
-/* all css style has readable lineheight */
-[class^="webkit-css"] {
-	line-height: 1.2em !important;
-}
-
+/*	CSS Inspect
+------------------------------------------------*/
 .webkit-css-selector {
 	color: #BD3E4D !important;
 }
@@ -159,12 +153,17 @@ Mac:
 	color: #C84252 !important;
 }
 
+#-webkit-web-inspector .selector-matches {
+	color: #333 !important;
+	font-weight: bold;
+	background: #FAD165 !important;
+}
 
-/* HTML */
+/*	Inspect HTML style
+------------------------------------------------*/
 .webkit-html-comment {
 	color: #4DA95F !important;
 	font-style: italic !important;
-	line-height: 1.6em !important;
 }
 
 .webkit-html-tag,
@@ -185,10 +184,12 @@ Mac:
 	color: #0049B8 !important;
 }
 
-/* Javascript */
+/*	JavaScript Style
+------------------------------------------------*/
 [class^="webkit-javascript"] {
-	line-height: 1.2em !important;
+
 }
+
 .webkit-javascript-string {
 	color: #3F8EBB !important;
 }
@@ -211,9 +212,7 @@ Mac:
 	color: #C84252 !important;
 }
 
-
-
-/*	Console
+/*	Console Style
 ------------------------------------------------*/
 #-webkit-web-inspector .console-user-command > .console-message-text {
 	color: #333 !important;
@@ -246,8 +245,6 @@ Mac:
 
 #-webkit-web-inspector .console-message,
 #-webkit-web-inspector .console-user-command {
-	/*border-color: #333 !important;*/
-	/*border-style: dashed !important;*/
 	border: 0px !important;
 	border-bottom:1px dashed #ddd !important;
 	padding: 3px 0 !important;
@@ -255,12 +252,9 @@ Mac:
 }
 
 #-webkit-web-inspector .console-message {
-	/*padding-bottom: 5px !important;*/
-	/*margin-bottom: 3px;*/
 }
 
 #-webkit-web-inspector .console .console-formatted-object {
-
 }
 
 #-webkit-web-inspector .console .console-formatted-string {
@@ -272,8 +266,6 @@ Mac:
 }
 
 
-
-
 /*  Source Code - Pane
 ------------------------------------------------*/
 
@@ -282,14 +274,9 @@ Mac:
 #-webkit-web-inspector #main-panels .pane > .title,
 #-webkit-web-inspector #main-panels .sidebar-separator,
 #-webkit-web-inspector #main-panels .sidebar-pane-subtitle {
-    font-family: sans-serif !important;
+
 }
 
 #-webkit-web-inspector .split-view-sidebar-right .webkit-css-property {
 }
 
-#-webkit-web-inspector .selector-matches {
-	color: #333 !important;
-	font-weight: bold;
-	background: #FAD165 !important;
-}
