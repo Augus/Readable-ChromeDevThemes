@@ -1,23 +1,17 @@
 /************************************************************
 
-	Install locations --
+How to Install 怎麼安裝
+Download Custom.css
+Replace the Custom.css file in your "User Stylesheets" folder. Here is how to find Custom.css:
 
-	Windows:
-	%LOCALAPPDATA%\Google\Chrome\User Data\Default\User StyleSheets\Custom.css
+Windows:
+%LOCALAPPDATA%\Google\Chrome\User Data\Default\User StyleSheets\Custom.css
 
-	Linux: -- this may be specific to your distro?
-	~/.config/chromium/Default/User StyleSheets/Custom.css
+Linux:
+~/.config/chromium/Default/User StyleSheets/Custom.css
 
-	Mac:
-	~/Library/Application Support/Google/Chrome/Default/User StyleSheets/Custom.css
-
-	Based on Coding Horror 2010 theme
-	Using Sublime text 2 default font, and more readable color and lineheight
-
-	all styles you can change
-	chrome-devtools://devtools/devTools.css
-
-	https://github.com/simonsmith/DarkDev/blob/master/Custom.css
+Mac:
+~/Library/Application Support/Google/Chrome/Default/User StyleSheets/Custom.css
 
 ************************************************************/
 
@@ -54,9 +48,8 @@ leave them as the defaults.
 #-webkit-web-inspector #console-message,
 #-webkit-web-inspector .text-editor-contents,
 #-webkit-web-inspector #console-view * {
-	/*font-size: 13px !important;*/
-	/*font-family: Monaco, Consolas, "Lucida Console", monospace !important;*/
-	line-height: 1.4em !important;
+	font-size: 10px !important;
+	line-height: 1.2em !important;
 	font-family: Menlo, "Consolas", monospace !important;
 }
 
@@ -70,18 +63,18 @@ body .source-code {
 /* set readable lineheight to console */
 
 #elements-content * {
-	line-height: 1.4em;
+	line-height: 1.2em;
 }
 #elements-content .parent, #elements-content .parent * {
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
 
-	-webkit-transition: background 250ms cubic-bezier(0.470, 0.000, 0.745, 0.715);
-	   -moz-transition: background 250ms cubic-bezier(0.470, 0.000, 0.745, 0.715);
-	    -ms-transition: background 250ms cubic-bezier(0.470, 0.000, 0.745, 0.715);
-	     -o-transition: background 250ms cubic-bezier(0.470, 0.000, 0.745, 0.715);
-	        transition: background 250ms cubic-bezier(0.470, 0.000, 0.745, 0.715); /* easeInSine */
+	-webkit-transition: background 150ms cubic-bezier(0.470, 0.000, 0.745, 0.715);
+	   -moz-transition: background 150ms cubic-bezier(0.470, 0.000, 0.745, 0.715);
+	    -ms-transition: background 150ms cubic-bezier(0.470, 0.000, 0.745, 0.715);
+	     -o-transition: background 150ms cubic-bezier(0.470, 0.000, 0.745, 0.715);
+	        transition: background 150ms cubic-bezier(0.470, 0.000, 0.745, 0.715); /* easeInSine */
 
 	-webkit-transition-timing-function: cubic-bezier(0.470, 0.000, 0.745, 0.715);
 	   -moz-transition-timing-function: cubic-bezier(0.470, 0.000, 0.745, 0.715);
@@ -132,9 +125,8 @@ body .source-code {
 
 
 #-webkit-web-inspector .elements .selected {
-	background: #D0F3F3 !important;
+	background: #FAD165 !important;
 	border: 1px solid #aaa;
-	/*border-bottom: 1px dotted #aaa;*/
 }
 
 #elements-content .parent.selected + *.expanded
@@ -155,7 +147,7 @@ body .source-code {
 /* CSS Inspect */
 /* all css style has readable lineheight */
 [class^="webkit-css"] {
-	line-height: 1.4em !important;
+	line-height: 1.2em !important;
 }
 
 .webkit-css-selector {
@@ -209,12 +201,12 @@ body .source-code {
 }
 
 .webkit-html-attribute-value {
-	color: #007CBB !important;
+	color: #0049B8 !important;
 }
 
 /* Javascript */
 [class^="webkit-javascript"] {
-	line-height: 1.4em !important;
+	line-height: 1.2em !important;
 }
 .webkit-javascript-string {
 	color: #3F8EBB !important;
@@ -277,8 +269,8 @@ body .source-code {
 	/*border-style: dashed !important;*/
 	border: 0px !important;
 	border-bottom:1px dashed #ddd !important;
-	padding: 5px 0 !important;
-	line-height: 1.4em !important;
+	padding: 3px 0 !important;
+	line-height: 1.2em !important;
 }
 
 #-webkit-web-inspector .console-message {
@@ -318,5 +310,5 @@ body .source-code {
 #-webkit-web-inspector .selector-matches {
 	color: #333 !important;
 	font-weight: bold;
-	background: #D0F3F3 !important;
+	background: #FAD165 !important;
 }
