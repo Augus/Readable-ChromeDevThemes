@@ -1,8 +1,8 @@
-/************************************************************
+/*------------------------------------------------
 
 How to Install 怎麼安裝
-Download Custom.css
-Replace the Custom.css file in your "User Stylesheets" folder. Here is how to find Custom.css:
+1. Download Custom.css
+2. Replace the Custom.css file in your "User Stylesheets" folder. Here is how to find Custom.css:
 
 Windows:
 %LOCALAPPDATA%\Google\Chrome\User Data\Default\User StyleSheets\Custom.css
@@ -13,22 +13,10 @@ Linux:
 Mac:
 ~/Library/Application Support/Google/Chrome/Default/User StyleSheets/Custom.css
 
-************************************************************/
+------------------------------------------------*/
 
-body.platform-windows .monospace,
-body.platform-windows .source-code
-{
-	/* Source code Pro is what I'm currently using in VS2012 so why not here
-	   too -- this will fallback to consolas in case you don't jump on trends :)
-    */
-	font-family: "Source Code Pro", "Consolas", monospace !important;
-}
-
-/*
-Linux/Mac may want to add thier own fonts, i'm not familiar with them so we'll
-leave them as the defaults.
-*/
-
+/*	Inspect Triangle Style
+------------------------------------------------*/
 #console-messages .console-group-messages .section .header::before,
 #console-messages .properties-tree li.parent::before
 {
@@ -41,8 +29,8 @@ leave them as the defaults.
 	content: url(chrome-devtools://devtools/Images/treeDownTriangleBlack.png) !important;
 }
 
-
-/* Common typography */
+/*	Globe Typography
+------------------------------------------------*/
 #-webkit-web-inspector .source-code,
 #-webkit-web-inspector #main-panels .split-view-sidebar-right *,
 #-webkit-web-inspector #console-message,
@@ -53,19 +41,15 @@ leave them as the defaults.
 	font-family: Menlo, "Consolas", monospace !important;
 }
 
-/* Sublime text 2 default font */
-body .monospace,
-body .source-code {
-
-}
-
-/* html inspect area */
-/* set readable lineheight to console */
-
+/*	Html inspect area
+------------------------------------------------*/
 #elements-content * {
-	line-height: 1.2em;
+
 }
-#elements-content .parent, #elements-content .parent * {
+
+/* animation settings */
+#elements-content .parent,
+#elements-content .parent * {
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
@@ -83,52 +67,48 @@ body .source-code {
 	        transition-timing-function: cubic-bezier(0.470, 0.000, 0.745, 0.715); /* easeInSine */
 }
 
+/* style of line */
+#elements-content.source-code {
+	background: #fcfcfc !important;
+}
+
 #elements-content .parent {
 	border: 1px solid transparent;
 }
 
-#elements-content .parent::before
-{
+#elements-content .parent::before {
 	content: url(chrome-devtools://devtools/Images/treeRightTriangleBlack.png) !important;
 	position: relative;
 	z-index: 999;
 }
 
-#elements-content .parent.expanded::before
-{
+/* expand style */
+#elements-content .parent.expande {
+	background: #f1f1f1;
+}
+
+#elements-content .parent.expanded::before {
 	content: url(chrome-devtools://devtools/Images/treeDownTriangleBlack.png) !important;
 }
 
-#elements-content .parent.expanded
-{
-	background: #f1f1f1;
-	/*margin-top : 0.875em !important;*/
-}
-
-
-
-#elements-content .parent.selected
-{
+/* select style */
+#elements-content .parent.selected {
 	background: #D0F3F3;
 	border-left: 1px solid #000;
 	border-radius: 3px;
-}
-
-#elements-content.source-code
-{
-	background: #fcfcfc !important;
 }
 
 #elements-content .highlight {
   color: #d4d4d4;
 }
 
-
+/* current select line style */
 #-webkit-web-inspector .elements .selected {
 	background: #FAD165 !important;
 	border: 1px solid #aaa;
 }
 
+/* wrap expanded style */
 #elements-content .parent.selected + *.expanded
 {
 	background: #f1f1f1 !important;
@@ -141,7 +121,8 @@ body .source-code {
 	margin-bottom: 10px !important;
 }
 
-/* end html inspect area */
+/*	------------------------------------------------
+ *	End of Html inspect area /
 
 
 /* CSS Inspect */
