@@ -1,6 +1,6 @@
 ## Readable-ChromeDevThemes ##
 ![](https://dl.dropboxusercontent.com/u/24421764/ChromeDevThemes/light-theme1.png)
-More readable color and lineheight on Chrome developer tools, 
+More readable color and lineheight on Chrome developer tools,
 Sublime text 2 default font
 Develop more pleasure！
 
@@ -11,9 +11,13 @@ Develop more pleasure！
   #### Windows: ####
 	`%LOCALAPPDATA%\Google\Chrome\User Data\Default\User StyleSheets\Custom.css`
   #### Linux ####
-  	`~/.config/chromium/Default/User StyleSheets/Custom.css`
+  	```
+  	curl -o ~/.config/chromium/Default/User\ StyleSheets/Custom.css https://raw.github.com/Augus/Readable-ChromeDevThemes/master/Custom.css
+  	```
   #### Mac: ####
-	`~/Library/Application Support/Google/Chrome/Default/User StyleSheets/Custom.css`
+		```
+		curl -o ~/Library/Application\ Support/Google/Chrome/Default/User\ StyleSheets/Custom.css https://raw.github.com/Augus/Readable-ChromeDevThemes/master/Custom.css
+		```
 
 ### Install Tip ###
 If you don't know where is `LOCALAPPDATA`, please see this [article](http://www.blogtechnika.com/what-is-application-data-folder-in-windows-7/).
