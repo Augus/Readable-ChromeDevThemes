@@ -2,15 +2,15 @@
 $background-color : #fcfcfc;
 $foreground-color : #333;
 
-$font-size: 12px;
-$font-family: Menlo, "Consolas", monospace ;
+$font-size: 15px;
+$font-family: "Source Sans Pro", Menlo, "Consolas", monospace ;
 $line-height : 1.2em;
 
 // html document colors
-$html-comment-color : #4DA95F;
+$html-comment-color : #5A9AA8;
 $html-tag-color : #6B4E32;
-$html-attr-color : #BD3E4D;
-$html-value-color : #0049B8;
+$html-attr-color : #d82168;
+$html-value-color : #1f6dd8;
 $html-tag-foreground : #333;
 
 // css document colors
@@ -19,8 +19,8 @@ $css-tag-foreground : #333;
 $css-number-color : #3F8EBB;
 $css-important-color : #0000FF;
 $css-property-color : #C84252;
-$css-selector-color : #389;
-$css-link-color : #389;
+$css-selector-color : #1476a2;
+$css-link-color : #1476a2;
 
 // javascript document colors
 $javascript-comment-color : #4DA95F;
@@ -30,20 +30,20 @@ $javascript-keyword-color : #C84252;
 
 // console styles
 $console-foreground : #333;
-$console-link-color : #389;
+$console-link-color : #1476a2;
 $console-link-hover-color : blue;
 $console-bool-color : #CC6600;
 $console-key-color : #007cbb;
 $console-value-color : #BD3E4D;
 $console-line-border : 1px dashed #ddd;
-$console-line-padding : 3px 0;
+$console-line-padding : 0 0;
 
 // inspect settings
 $inspect-css-match-foreground : #333;
-$inspect-css-match-background : #FAD165;
+$inspect-css-match-background : #ffeea8;
 $inspect-css-property-color : #BD3E4D;
-$inspect-html-expand-background : #f1f1f1;
-$inspect-html-expand-border-color : #aaa;
-$inspect-html-selected-background : #fad165;
+$inspect-html-expand-background : #eeeeee;
+$inspect-html-expand-border-color : #6a6a6a;
+$inspect-html-selected-background : #ffeea8;
 
 
