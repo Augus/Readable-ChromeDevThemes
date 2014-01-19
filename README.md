@@ -12,12 +12,14 @@ Develop more pleasure！
 	`%LOCALAPPDATA%\Google\Chrome\User Data\Default\User StyleSheets\Custom.css`
   #### Linux ####
   	```
+  	cp ~/.config/chromium/Default/User\ StyleSheets/Custom.css ~/.config/chromium/Default/User\ StyleSheets/Custom_backup.css
   	curl -o ~/.config/chromium/Default/User\ StyleSheets/Custom.css https://raw.github.com/Augus/Readable-ChromeDevThemes/master/Custom.css
   	```
   #### Mac: ####
-		```
-		curl -o ~/Library/Application\ Support/Google/Chrome/Default/User\ StyleSheets/Custom.css https://raw.github.com/Augus/Readable-ChromeDevThemes/master/Custom.css
-		```
+	```
+  	cp ~/Library/Application\ Support/Google/Chrome/Default/User\ StyleSheets/Custom.css ~/Library/Application\ Support/Google/Chrome/Default/User\ StyleSheets/Custom_backup.css
+  	curl -o ~/Library/Application\ Support/Google/Chrome/Default/User\ StyleSheets/Custom.css https://raw.github.com/Augus/Readable-ChromeDevThemes/master/Custom.css
+	```
 
 ### Install Tip ###
 If you don't know where is `LOCALAPPDATA`, please see this [article](http://www.blogtechnika.com/what-is-application-data-folder-in-windows-7/).
